@@ -7,12 +7,12 @@ var navigate = (function() {
   });
 })();
 
-/*var slider = document.getElementById('slider'),
-    sliderItems = document.getElementById('slides'),
-    prev = document.getElementById('prev'),
-    next = document.getElementById('next');
+var slider = document.getElementById('slider'),
+  sliderItems = document.getElementById('slides'),
+  prev = document.getElementById('prev'),
+  next = document.getElementById('next');
 
-function slide(wrapper, items, prev, next) {
+/*function slide(wrapper, items, prev, next) {
   var posX1 = 0,
       posX2 = 0,
       posInitial,
