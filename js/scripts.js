@@ -129,5 +129,5 @@ function slide(wrapper, items, prev, next) {
     allowShift = true;
   }
 }
-/*
-                                                          slide(slider, sliderItems, prev, next);
+
+slide(slider, sliderItems, prev, next);
