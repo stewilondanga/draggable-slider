@@ -90,11 +90,11 @@ body {
   background: #a78df5;
 }
 
-/*.slider.loaded .slide:nth-child(5) {
+.slider.loaded .slide:nth-child(5) {
   background: #ff8686;
 }
 
-.control {
+/*.control {
   position: absolute;
   top: 50%;
   width: 50px;
