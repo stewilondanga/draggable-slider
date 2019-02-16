@@ -106,7 +106,7 @@ body {
   z-index: 2;
 }
 
-/*.prev,
+.prev,
 .next {
   background-size: 22px;
   background-position: center;
@@ -114,7 +114,7 @@ body {
   cursor: pointer;
 }
 
-.prev {
+/*.prev {
   background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
   left: -20px;
 }
