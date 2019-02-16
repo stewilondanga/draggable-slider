@@ -47,7 +47,7 @@ body {
   z-index: 1;
 }
 
-/*.slides {
+.slides {
   display: flex;
   position: relative;
   top: 0;
@@ -55,7 +55,7 @@ body {
   width: 10000px;
 }
 
-.slides.shifting {
+/*.slides.shifting {
   transition: left .2s ease-out;
 }
 
