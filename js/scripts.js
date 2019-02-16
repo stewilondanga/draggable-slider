@@ -120,14 +120,14 @@ function slide(wrapper, items, prev, next) {
       items.style.left = -(slidesLength * slideSize) + "px";
       index = slidesLength - 1;
     }
+
+    if (index == slidesLength) {
+      items.style.left = -(1 * slideSize) + "px";
+      index = 0;
+    }
     /*
-                                                          if (index == slidesLength) {
-                                                            items.style.left = -(1 * slideSize) + "px";
-                                                            index = 0;
+                                                              allowShift = true;
+                                                            }
                                                           }
 
-                                                          allowShift = true;
-                                                        }
-                                                      }
-
-                                                      slide(slider, sliderItems, prev, next);
+                                                          slide(slider, sliderItems, prev, next);
