@@ -68,64 +68,64 @@ function slide(wrapper, items, prev, next) {
 
   function dragAction(e) {
     e = e || window.event;
-    /*
-                          if (e.type == 'touchmove') {
-                            posX2 = posX1 - e.touches[0].clientX;
-                            posX1 = e.touches[0].clientX;
-                          } else {
-                            posX2 = posX1 - e.clientX;
-                            posX1 = e.clientX;
-                          }
-                          items.style.left = (items.offsetLeft - posX2) + "px";
-                        }
 
-                        function dragEnd (e) {
-                          posFinal = items.offsetLeft;
-                          if (posFinal - posInitial < -threshold) {
-                            shiftSlide(1, 'drag');
-                          } else if (posFinal - posInitial > threshold) {
-                            shiftSlide(-1, 'drag');
-                          } else {
-                            items.style.left = (posInitial) + "px";
-                          }
-
-                          document.onmouseup = null;
-                          document.onmousemove = null;
-                        }
-
-                        function shiftSlide(dir, action) {
-                          items.classList.add('shifting');
-
-                          if (allowShift) {
-                            if (!action) { posInitial = items.offsetLeft; }
-
-                            if (dir == 1) {
-                              items.style.left = (posInitial - slideSize) + "px";
-                              index++;
-                            } else if (dir == -1) {
-                              items.style.left = (posInitial + slideSize) + "px";
-                              index--;
+    if (e.type == 'touchmove') {
+      posX2 = posX1 - e.touches[0].clientX;
+      posX1 = e.touches[0].clientX;
+    } else {
+      posX2 = posX1 - e.clientX;
+      posX1 = e.clientX;
+    }
+    items.style.left = (items.offsetLeft - posX2) + "px";
+  }
+  /*
+                          function dragEnd (e) {
+                            posFinal = items.offsetLeft;
+                            if (posFinal - posInitial < -threshold) {
+                              shiftSlide(1, 'drag');
+                            } else if (posFinal - posInitial > threshold) {
+                              shiftSlide(-1, 'drag');
+                            } else {
+                              items.style.left = (posInitial) + "px";
                             }
-                          };
 
-                          allowShift = false;
-                        }
-
-                        function checkIndex (){
-                          items.classList.remove('shifting');
-
-                          if (index == -1) {
-                            items.style.left = -(slidesLength * slideSize) + "px";
-                            index = slidesLength - 1;
+                            document.onmouseup = null;
+                            document.onmousemove = null;
                           }
 
-                          if (index == slidesLength) {
-                            items.style.left = -(1 * slideSize) + "px";
-                            index = 0;
+                          function shiftSlide(dir, action) {
+                            items.classList.add('shifting');
+
+                            if (allowShift) {
+                              if (!action) { posInitial = items.offsetLeft; }
+
+                              if (dir == 1) {
+                                items.style.left = (posInitial - slideSize) + "px";
+                                index++;
+                              } else if (dir == -1) {
+                                items.style.left = (posInitial + slideSize) + "px";
+                                index--;
+                              }
+                            };
+
+                            allowShift = false;
                           }
 
-                          allowShift = true;
-                        }
-                      }
+                          function checkIndex (){
+                            items.classList.remove('shifting');
 
-                      slide(slider, sliderItems, prev, next);
+                            if (index == -1) {
+                              items.style.left = -(slidesLength * slideSize) + "px";
+                              index = slidesLength - 1;
+                            }
+
+                            if (index == slidesLength) {
+                              items.style.left = -(1 * slideSize) + "px";
+                              index = 0;
+                            }
+
+                            allowShift = true;
+                          }
+                        }
+
+                        slide(slider, sliderItems, prev, next);
