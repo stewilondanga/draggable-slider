@@ -39,7 +39,7 @@ body {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/*.wrapper {
+.wrapper {
   overflow: hidden;
   position: relative;
   width: 400px;
@@ -47,7 +47,7 @@ body {
   z-index: 1;
 }
 
-.slides {
+/*.slides {
   display: flex;
   position: relative;
   top: 0;
