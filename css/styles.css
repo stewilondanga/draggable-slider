@@ -82,10 +82,11 @@ body {
   background: #7ADCEF;
 }
 
-/*.slider.loaded .slide:nth-child(3) {
+.slider.loaded .slide:nth-child(3) {
   background: #3CFF96;
 }
-.slider.loaded .slide:nth-child(4) {
+
+/*.slider.loaded .slide:nth-child(4) {
   background: #a78df5;
 }
 .slider.loaded .slide:nth-child(5) {
