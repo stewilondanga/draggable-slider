@@ -77,11 +77,12 @@ body {
   background: #FFCF47;
 }
 
-/*.slider.loaded .slide:nth-child(1),
+.slider.loaded .slide:nth-child(1),
 .slider.loaded .slide:nth-child(6) {
   background: #7ADCEF;
 }
-.slider.loaded .slide:nth-child(3) {
+
+/*.slider.loaded .slide:nth-child(3) {
   background: #3CFF96;
 }
 .slider.loaded .slide:nth-child(4) {
