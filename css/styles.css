@@ -119,12 +119,12 @@ body {
   left: -20px;
 }
 
-/*.next {
+.next {
   background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
   right: -20px;
 }
 
-.prev:active,
+/*.prev:active,
 .next:active {
   transform: scale(0.8);
 }
