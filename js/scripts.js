@@ -88,44 +88,44 @@ function slide(wrapper, items, prev, next) {
     } else {
       items.style.left = (posInitial) + "px";
     }
-    /*
-                                document.onmouseup = null;
-                                document.onmousemove = null;
-                              }
 
-                              function shiftSlide(dir, action) {
-                                items.classList.add('shifting');
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+  /*
+                                function shiftSlide(dir, action) {
+                                  items.classList.add('shifting');
 
-                                if (allowShift) {
-                                  if (!action) { posInitial = items.offsetLeft; }
+                                  if (allowShift) {
+                                    if (!action) { posInitial = items.offsetLeft; }
 
-                                  if (dir == 1) {
-                                    items.style.left = (posInitial - slideSize) + "px";
-                                    index++;
-                                  } else if (dir == -1) {
-                                    items.style.left = (posInitial + slideSize) + "px";
-                                    index--;
+                                    if (dir == 1) {
+                                      items.style.left = (posInitial - slideSize) + "px";
+                                      index++;
+                                    } else if (dir == -1) {
+                                      items.style.left = (posInitial + slideSize) + "px";
+                                      index--;
+                                    }
+                                  };
+
+                                  allowShift = false;
+                                }
+
+                                function checkIndex (){
+                                  items.classList.remove('shifting');
+
+                                  if (index == -1) {
+                                    items.style.left = -(slidesLength * slideSize) + "px";
+                                    index = slidesLength - 1;
                                   }
-                                };
 
-                                allowShift = false;
+                                  if (index == slidesLength) {
+                                    items.style.left = -(1 * slideSize) + "px";
+                                    index = 0;
+                                  }
+
+                                  allowShift = true;
+                                }
                               }
 
-                              function checkIndex (){
-                                items.classList.remove('shifting');
-
-                                if (index == -1) {
-                                  items.style.left = -(slidesLength * slideSize) + "px";
-                                  index = slidesLength - 1;
-                                }
-
-                                if (index == slidesLength) {
-                                  items.style.left = -(1 * slideSize) + "px";
-                                  index = 0;
-                                }
-
-                                allowShift = true;
-                              }
-                            }
-
-                            slide(slider, sliderItems, prev, next);
+                              slide(slider, sliderItems, prev, next);
