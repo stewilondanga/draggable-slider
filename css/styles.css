@@ -55,11 +55,11 @@ body {
   width: 10000px;
 }
 
-/*.slides.shifting {
+.slides.shifting {
   transition: left .2s ease-out;
 }
 
-.slide {
+/*.slide {
   width: 400px;
   height: 300px;
   cursor: pointer;
