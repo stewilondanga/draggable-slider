@@ -59,7 +59,7 @@ body {
   transition: left .2s ease-out;
 }
 
-/*.slide {
+.slide {
   width: 400px;
   height: 300px;
   cursor: pointer;
@@ -72,7 +72,7 @@ body {
   border-radius: 2px;
 }
 
-.slider.loaded .slide:nth-child(2),
+/*.slider.loaded .slide:nth-child(2),
 .slider.loaded .slide:nth-child(7) {
   background: #FFCF47;
 }
